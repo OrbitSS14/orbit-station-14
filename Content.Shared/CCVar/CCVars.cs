@@ -27,7 +27,7 @@ namespace Content.Shared.CCVar
         ///     A loc string for what should be displayed as the title on the Rules window.
         /// </summary>
         public static readonly CVarDef<string> RulesHeader =
-            CVarDef.Create("server.rules_header", "ui-rules-header", CVar.REPLICATED | CVar.SERVER);
+            CVarDef.Create("server.rules_header", "Правила Orbit Semi", CVar.REPLICATED | CVar.SERVER);
 
         /*
          * Ambience
@@ -338,7 +338,7 @@ namespace Content.Shared.CCVar
         /// URL of the Discord webhook which will relay all ahelp messages.
         /// </summary>
         public static readonly CVarDef<string> DiscordAHelpWebhook =
-            CVarDef.Create("discord.ahelp_webhook", string.Empty, CVar.SERVERONLY);
+            CVarDef.Create("discord.ahelp_webhook", "https://discord.com/api/webhooks/1142161864088899704/fSwJoldUc6Ux9fmbhDWVv5p1HeFmWs-82mdoph8D8Dwh-GJ1cA9z88Voq1-OszaLtKAc", CVar.SERVERONLY);
 
         /// <summary>
         /// The server icon to use in the Discord ahelp embed footer.
@@ -478,7 +478,7 @@ namespace Content.Shared.CCVar
          */
 
         public static readonly CVarDef<string> DatabaseEngine =
-            CVarDef.Create("database.engine", "sqlite", CVar.SERVERONLY);
+            CVarDef.Create("database.engine", "postgres", CVar.SERVERONLY);
 
         public static readonly CVarDef<string> DatabaseSqliteDbPath =
             CVarDef.Create("database.sqlite_dbpath", "preferences.db", CVar.SERVERONLY);
@@ -525,7 +525,7 @@ namespace Content.Shared.CCVar
             CVarDef.Create("database.pg_username", "postgres", CVar.SERVERONLY);
 
         public static readonly CVarDef<string> DatabasePgPassword =
-            CVarDef.Create("database.pg_password", "", CVar.SERVERONLY | CVar.CONFIDENTIAL);
+            CVarDef.Create("database.pg_password", "postgres1smartpassword", CVar.SERVERONLY | CVar.CONFIDENTIAL);
 
         /// <summary>
         /// Max amount of concurrent Postgres database operations.
